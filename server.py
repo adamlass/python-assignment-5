@@ -1,8 +1,7 @@
-from flask import Flask
-from flask import request, jsonify, abort, make_response
+from flask import Flask, request, jsonify, abort, make_response
 app = Flask(__name__)
 
-SERVER_PASSWORD = "Sy"
+SERVER_PASSWORD = "Xy"
 
 @app.route('/', methods=['POST'])
 def check_password():
